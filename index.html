@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container" id="login-container">
+        <div class="card">
+            <h3>Login</h3>
+            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+            <input type="password" id="password" class="form-control" placeholder="Enter your password">
+            <button class="btn btn-primary" id="login-btn">Sign In</button>
+        </div>
+    </div>
+
+    <div id="store-container" class="hidden">
+        <nav class="navbar rounded p-2 m-2 mt-2 bs-secondary-color ">
+            <h1 class="">welcome to our Store</h1>
+            <input type="text" id="search-bar" class="form-control" placeholder="Search products...">
+        </nav>
+        
+        <div class="content">
+            <div id="products-container" class="products-grid"></div>
+            <div id="cart-container" class="cart">
+                <h3>Shopping Cart</h3>
+                <ul id="cart-list" class="list-group"></ul>
+                <button class="btn btn-danger" id="clear-cart">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
